@@ -128,7 +128,7 @@ def get_dealer_reviews_from_cf(url, **kwargs):
 
 def analyze_review_sentiments(text):
     url = "https://api.jp-tok.natural-language-understanding.watson.cloud.ibm.com/instances/2403b250-ebcf-4ad3-a80d-ef5b08526bd6"
-    api_key = "3MjpntNNAPk9UHocluSkIx5j_kd8GvkDJqmoSiEl68qB"
+    api_key = "YOUR_API_KEY"
     authenticator = IAMAuthenticator(api_key)
     natural_language_understanding = NaturalLanguageUnderstandingV1(version='2021-08-01',authenticator=authenticator)
     natural_language_understanding.set_service_url(url)
